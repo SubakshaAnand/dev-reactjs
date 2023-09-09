@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 } */
+
+.myClass{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-content: center;
+  margin-left: 50%;
+  color: goldenrod;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
