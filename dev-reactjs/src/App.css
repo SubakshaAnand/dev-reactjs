@@ -1,5 +1,20 @@
 
 
 .loginGradient{
-  background-image: linear-gradient(to right top, #051937, #002668, #172f98, #4e2ec5, #8c12eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #002668, #172f98, #4e2ec5, #8c12eb);
+}
+
+.inputBox{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+}
+
+.cardbgNone{
+  background-image: none;
 }
