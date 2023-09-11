@@ -14,15 +14,14 @@ const initialState = {
             user: action.payload.username,
           };
         }
-        return state;
-  
+
       case 'LOGOUT':
         return {
           ...state,
           isAuthenticated: false,
           user: null,
         };
-  
+     
       default:
         return state;
     }

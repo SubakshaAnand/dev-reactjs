@@ -1,0 +1,15 @@
+In this react application we used redux for login credentials, and it is static data.
+
+UserName : adminuser@gmail.com
+Password : password1234
+
+Basically my grammar will be not at good level.
+
+This project, I am being working in this portfolio is for Content Management System with various technologies that listed below.
+
+Front End: ReactJS +Vite , Tailwind Css, redux, HTML, css;
+Back End : ASP.NET core , C#, SQL SSMS.
+
+The Url for backend git is : https://github.com/SubakshaAnand/.NetCSTP
+
+Passionate web developers can download the source code and use it Wisely.

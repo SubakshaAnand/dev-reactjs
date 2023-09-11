@@ -26,7 +26,7 @@ export default function LoginPage() {
   return (
 
     <React.Fragment>
-      <div  className="loginGradient">
+      <div className="loginGradient">
         <Card className="mt-16 w-96">
           <CardHeader
             variant="gradient"
@@ -40,9 +40,12 @@ export default function LoginPage() {
           <CardBody className="flex flex-col gap-4">
             <div>
               <input className="mt-1 px-3 py-2 bg-white border shadow-sm 
-        border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 
-        focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                type="text" id="email" placeholder="Email or UserName" size="lg"
+                border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 
+              focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+                type="text"
+                id="email"
+                placeholder="Email or UserName"
+                size="lg"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
@@ -50,8 +53,10 @@ export default function LoginPage() {
 
             <div>
               <input className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 
-        placeholder-slate-400 focus:outline-none focus:border-sky-500 
-        focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" color="blue" type="text" id="password" placeholder="Password"
+              placeholder-slate-400 focus:outline-none focus:border-sky-500 
+                focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" 
+                type="text" id="password" 
+                placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 size="lg" />
