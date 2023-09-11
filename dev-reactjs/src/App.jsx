@@ -1,27 +1,28 @@
 import React from 'react';
-import './App.css';
-
-//importing pages from difffe
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Dashboard from './pages/dashboard/dashboard';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import LoginPage from './pages/login-page/login';
 import Signup from './pages/login-page/signup';
+import LoginPage from './pages/login-page/loginpage';
+
 
 function App() {
+  const isAuthenticated = useSelector((state) => state.isAuthenticated);
+
   return (
     <>
       <Router>
-        {/* <div>
-          <ul>
-            <li>
-              <Link to='/'>Dashboard</Link>
-            </li>
-          </ul>
-        </div> */}
         <Routes>
-          <Route exact path='/' element={< LoginPage />}></Route>
-          <Route exact path='/dashboard' element={<Dashboard />}></Route>
-          <Route exact path='/signup' element={<Signup />}></Route>
+          <Route path="/" element={<Navigate to="/login" />} />
+          <Route
+            path="/dashboard"
+            element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />}
+          />
+          <Route
+            path="/login"
+            element={!isAuthenticated ? <LoginPage /> : <Navigate to="/dashboard" />}
+          />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </Router>
     </>
