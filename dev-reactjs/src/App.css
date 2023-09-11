@@ -1,11 +1,11 @@
 
 
 .loginGradient{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(to right top, #051937, #002668, #172f98, #4e2ec5, #8c12eb);
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh !important;
+    background-image: linear-gradient(to right top, #051937, #002668, #172f98, #4e2ec5, #8c12eb) !important;
 }
 
 .inputBox{
@@ -15,6 +15,3 @@
   padding: 12px 20px;
 }
 
-.cardbgNone{
-  background-image: none;
-}

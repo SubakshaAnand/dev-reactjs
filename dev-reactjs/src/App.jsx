@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import Dashboard from './pages/dashboard/dashboard';
 import Signup from './pages/login-page/signup';
 import LoginPage from './pages/login-page/loginpage';
+import './App.css';
 
 
 function App() {

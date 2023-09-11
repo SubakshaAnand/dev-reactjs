@@ -26,7 +26,7 @@ export default function LoginPage() {
   return (
 
     <React.Fragment>
-      <div className="loginGradient">
+      <div  className="loginGradient">
         <Card className="mt-16 w-96">
           <CardHeader
             variant="gradient"
