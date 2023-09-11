@@ -10,7 +10,7 @@ import {
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { login } from "./reduxlogin/actions";
+import { login, setIsauthenticated } from "./reduxlogin/actions";
 
 
 export default function LoginPage() {
@@ -19,10 +19,16 @@ export default function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    dispatch(login(username, password));
-  };
 
+  function handleLoginSuccess() {
+    dispatch(setIsauthenticated(true));
+  }
+  
+  function handleLogin() {
+
+    dispatch(login(username, password));
+    handleLoginSuccess();
+  }
   return (
 
     <React.Fragment>

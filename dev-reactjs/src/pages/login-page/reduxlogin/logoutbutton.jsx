@@ -8,6 +8,7 @@ const LogoutButton = () => {
 
   const handleLogout = () => {
     dispatch(logout());
+     dispatch(setIsauthenticated(false));
   };
 
   return <Button onClick={handleLogout} size='lg'>Logout</Button>;
