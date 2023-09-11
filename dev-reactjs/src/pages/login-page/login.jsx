@@ -14,7 +14,7 @@ return (
 
 <>
 <Card className="mt-6 w-96">
-<div>Tamil</div>
+<div className="bg-blue-500 text-white p-4 ml-2">Tamil</div>
 </Card>
 </>
 

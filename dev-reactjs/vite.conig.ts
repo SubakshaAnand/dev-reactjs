@@ -26,6 +26,6 @@ export default defineConfig(() => {
                     plugins: ['@emotion/babel-plugin'],
                 },
             }),
-            svgr({ svgrOptions: { icon: true } }),],
+            svgr({ svgrOptions: { icon: true } })],
     };
 });
