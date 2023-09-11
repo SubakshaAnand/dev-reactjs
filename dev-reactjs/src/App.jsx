@@ -8,7 +8,6 @@ import './App.css';
 
 
 function App() {
-  debugger;
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
   return (
