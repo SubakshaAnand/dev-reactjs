@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "vite",
+    "dev": "vite",
     "prebuild": "npm run build:tailwind",
     "build": "eslint src && tsc && vite build",
     "test": "react-scripts test",
