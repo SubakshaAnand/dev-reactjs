@@ -19,8 +19,3 @@
   float: right !important;
 }
 
-.accordion-border{
-  border: 1px solid var(--cui-blue) !important;
-  background-color: 1px solid var(--cui-blue) !important;
-}
-

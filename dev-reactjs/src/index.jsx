@@ -5,17 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@material-tailwind/react';
 import { Provider } from 'react-redux';
-import store from './pages/login-page/reduxlogin/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
       <ThemeProvider>
         <App />
       </ThemeProvider>
-    </Provider>
   </React.StrictMode>
 );
 

@@ -8,27 +8,20 @@ import {
   Button
 } from "@material-tailwind/react";
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
-import { login, setIsauthenticated } from "./reduxlogin/actions";
+import { Link, useNavigate } from "react-router-dom";
 
 
 export default function LoginPage() {
 
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-
-  function handleLoginSuccess() {
-    dispatch(setIsauthenticated(true));
-  }
   
   function handleLogin() {
-
-    dispatch(login(username, password));
-    handleLoginSuccess();
+    navigate('/dashboard');
   }
+
   return (
 
     <React.Fragment>
