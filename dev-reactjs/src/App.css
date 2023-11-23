@@ -1,21 +1,28 @@
-
-
-.loginGradient{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: 100vh !important;
-    background-image: linear-gradient(to right top, #051937, #002668, #172f98, #4e2ec5, #8c12eb) !important;
+.loginGradient {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #002668,
+    #172f98,
+    #4e2ec5,
+    #8c12eb
+  ) !important;
 }
 
-.inputBox{
+.inputBox {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   padding: 12px 20px;
 }
 
-.floatright{
+.floatright {
   float: right !important;
 }
-
+.test {
+  backface-visibility: hidden;
+}
